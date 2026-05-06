@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>내 계정 | NextPartner</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable.min.css" />
+  <link rel="stylesheet" href="dist/index.css" />
+  <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body class="font-base text-neutral-900 bg-neutral-50 pb-16 md:pb-0">
+
+<!-- ══════════════════════════════════════════
+     HEADER — 디자인 시스템 코드 그대로 사용
+══════════════════════════════════════════ -->
+<header class="np-header sticky top-0 z-50">
+  <div class="np-header-inner">
+    <a href="#" class="flex items-center gap-2 shrink-0">
+      <svg width="32" height="32" viewBox="0 0 32 32" fill="none">
+        <path d="M16 2L28.7 9.5V24.5L16 32L3.3 24.5V9.5L16 2Z" fill="#ff7f65"/>
+        <path d="M11 10h2.5l5 12H16l-1.2-3H10l-1.2 3H6.5L11 10Zm2.8 7-1.8-4.5L10.2 17h3.6Z" fill="white"/>
+      </svg>
+      <span class="text-xl font-bold text-neutral-900 tracking-tight">NextPartner</span>
+    </a>
+    <nav class="np-header-nav">
+      <a class="np-nav-link">서비스소개</a>
+      <div class="np-header-divider"></div>
+      <a class="np-nav-link-job">채용공고</a>
+      <a class="np-nav-link-job">프로젝트</a>
+      <a class="np-nav-link-job">이력서</a>
+    </nav>
+    <div class="np-header-actions">
+      <div class="flex items-center gap-2">
+        <div class="w-8 h-8 rounded-full bg-primary-100 overflow-hidden shrink-0">
+          <img src="https://i.pravatar.cc/32?img=12" alt="프로필" class="w-full h-full object-cover" />
+        </div>
+        <span class="text-base text-neutral-600">양인희님</span>
+      </div>
+      <button class="flex items-center justify-center w-10 h-10 text-neutral-400 rounded-button hover:bg-neutral-50 hover:text-neutral-800 transition-colors" aria-label="로그아웃">
+        <i data-lucide="log-out" class="w-5 h-5"></i>
+      </button>
+    </div>
+    <button class="np-header-menu-btn" aria-label="메뉴">
+      <i data-lucide="menu" class="w-6 h-6"></i>
+    </button>
+  </div>
+</header>
+
+
+<!-- ══════════════════════════════════════════
+     본문
+══════════════════════════════════════════ -->
+<div class="max-w-content mx-auto py-4 md:py-6 flex flex-col gap-4">
+
+  <!-- 프로필 + 통계 -->
+  <section class="border border-neutral-200 rounded-2xl overflow-hidden bg-neutral-0">
+
+    <!-- 유저 프로필 -->
+    <div class="px-5 md:px-8 pt-6 pb-5">
+      <p class="text-base text-neutral-500">안녕하세요</p>
+      <p class="text-2xl font-bold text-neutral-900 mt-1 leading-tight">
+        양인희<span class="text-primary-500">님</span>
+      </p>
+      <p class="text-base text-neutral-400 mt-2">010****3393</p>
+    </div>
+
+    <!-- 통계 카드 4종 -->
+    <div class="border-t border-neutral-100">
+      <div class="grid grid-cols-4">
+
+        <!-- 이력서 -->
+        <a href="#" class="flex flex-col items-center py-5 gap-2 hover:bg-neutral-50 transition-colors border-r border-neutral-100">
+          <div class="w-10 h-10 rounded-full bg-primary-50 flex items-center justify-center">
+            <i data-lucide="file-text" style="width:20px;height:20px;stroke:#ff7f65;"></i>
+          </div>
+          <span class="text-xl font-bold text-neutral-900">1</span>
+          <span class="text-sm text-neutral-500">이력서</span>
+        </a>
+
+        <!-- 지원 -->
+        <a href="#" class="flex flex-col items-center py-5 gap-2 hover:bg-neutral-50 transition-colors border-r border-neutral-100">
+          <div class="w-10 h-10 rounded-full bg-primary-50 flex items-center justify-center">
+            <i data-lucide="send" style="width:20px;height:20px;stroke:#ff7f65;"></i>
+          </div>
+          <span class="text-xl font-bold text-neutral-900">0</span>
+          <span class="text-sm text-neutral-500">지원</span>
+        </a>
+
+        <!-- 면접 -->
+        <a href="#" class="flex flex-col items-center py-5 gap-2 hover:bg-neutral-50 transition-colors border-r border-neutral-100">
+          <div class="w-10 h-10 rounded-full bg-primary-50 flex items-center justify-center">
+            <i data-lucide="calendar" style="width:20px;height:20px;stroke:#ff7f65;"></i>
+          </div>
+          <span class="text-xl font-bold text-neutral-900">0</span>
+          <span class="text-sm text-neutral-500">면접</span>
+        </a>
+
+        <!-- 관심 -->
+        <a href="#" class="flex flex-col items-center py-5 gap-2 hover:bg-neutral-50 transition-colors">
+          <div class="w-10 h-10 rounded-full bg-primary-50 flex items-center justify-center">
+            <i data-lucide="heart" style="width:20px;height:20px;stroke:#ff7f65;"></i>
+          </div>
+          <span class="text-xl font-bold text-neutral-900">0</span>
+          <span class="text-sm text-neutral-500">관심</span>
+        </a>
+
+      </div>
+    </div>
+
+  </section>
+
+  <!-- 활동 섹션 -->
+  <section class="border border-neutral-200 rounded-2xl overflow-hidden bg-neutral-0">
+    <p class="text-sm font-bold text-neutral-400 px-5 md:px-8 pt-5 pb-1">활동</p>
+
+    <a href="#" class="flex items-center px-5 md:px-8 py-4 border-b border-neutral-100 hover:bg-neutral-50 transition-colors cursor-pointer">
+      <span class="text-lg text-neutral-800 flex-1 leading-relaxed">지원 현황</span>
+      <i data-lucide="chevron-right" style="width:16px;height:16px;stroke:#999999;"></i>
+    </a>
+
+    <a href="#" class="flex items-center px-5 md:px-8 py-4 border-b border-neutral-100 hover:bg-neutral-50 transition-colors cursor-pointer">
+      <span class="text-lg text-neutral-800 flex-1 leading-relaxed">면접 일정</span>
+      <i data-lucide="chevron-right" style="width:16px;height:16px;stroke:#999999;"></i>
+    </a>
+
+    <a href="#" class="flex items-center px-5 md:px-8 py-4 hover:bg-neutral-50 transition-colors cursor-pointer">
+      <span class="text-lg text-neutral-800 flex-1 leading-relaxed">관심 공고·기업</span>
+      <i data-lucide="chevron-right" style="width:16px;height:16px;stroke:#999999;"></i>
+    </a>
+  </section>
+
+  <!-- 고객센터 섹션 -->
+  <section class="border border-neutral-200 rounded-2xl overflow-hidden bg-neutral-0">
+    <p class="text-sm font-bold text-neutral-400 px-5 md:px-8 pt-5 pb-1">고객센터</p>
+
+    <a href="#" class="flex items-center gap-3 px-5 md:px-8 py-4 border-b border-neutral-100 hover:bg-neutral-50 transition-colors cursor-pointer">
+      <i data-lucide="help-circle" style="width:20px;height:20px;stroke:#999999;"></i>
+      <span class="text-lg text-neutral-800 flex-1 leading-relaxed">자주 묻는 질문</span>
+      <i data-lucide="chevron-right" style="width:16px;height:16px;stroke:#999999;"></i>
+    </a>
+
+    <a href="#" class="flex items-center gap-3 px-5 md:px-8 py-4 border-b border-neutral-100 hover:bg-neutral-50 transition-colors cursor-pointer">
+      <i data-lucide="bell" style="width:20px;height:20px;stroke:#999999;"></i>
+      <span class="text-lg text-neutral-800 flex-1 leading-relaxed">공지사항</span>
+      <i data-lucide="chevron-right" style="width:16px;height:16px;stroke:#999999;"></i>
+    </a>
+
+    <a href="#" class="flex items-center gap-3 px-5 md:px-8 py-4 border-b border-neutral-100 hover:bg-neutral-50 transition-colors cursor-pointer">
+      <i data-lucide="book-open" style="width:20px;height:20px;stroke:#999999;"></i>
+      <span class="text-lg text-neutral-800 flex-1 leading-relaxed">컨텐츠</span>
+      <i data-lucide="chevron-right" style="width:16px;height:16px;stroke:#999999;"></i>
+    </a>
+
+    <a href="#" class="flex items-center gap-3 px-5 md:px-8 py-4 hover:bg-neutral-50 transition-colors cursor-pointer">
+      <i data-lucide="phone" style="width:20px;height:20px;stroke:#999999;"></i>
+      <span class="text-lg text-neutral-800 flex-1 leading-relaxed">전화 상담 예약</span>
+      <i data-lucide="chevron-right" style="width:16px;height:16px;stroke:#999999;"></i>
+    </a>
+  </section>
+
+  <!-- 계정 설정 + 로그아웃/회원탈퇴 -->
+  <section class="border border-neutral-200 rounded-2xl overflow-hidden bg-neutral-0">
+    <p class="text-sm font-bold text-neutral-400 px-5 md:px-8 pt-5 pb-1">계정 설정</p>
+
+    <a href="#" class="flex items-center gap-3 px-5 md:px-8 py-4 border-b border-neutral-100 hover:bg-neutral-50 transition-colors cursor-pointer">
+      <i data-lucide="settings" style="width:20px;height:20px;stroke:#999999;"></i>
+      <span class="text-lg text-neutral-800 flex-1 leading-relaxed">계정 설정</span>
+      <i data-lucide="chevron-right" style="width:16px;height:16px;stroke:#999999;"></i>
+    </a>
+
+    <!-- 로그아웃 / 회원 탈퇴 -->
+    <div class="px-5 md:px-8 py-5 flex items-center gap-4">
+      <button class="text-lg text-neutral-600 cursor-pointer hover:text-neutral-900 transition-colors bg-transparent border-none font-base">
+        로그아웃
+      </button>
+      <span class="text-neutral-200 select-none" aria-hidden="true">|</span>
+      <button class="text-lg text-neutral-400 cursor-pointer hover:text-neutral-600 transition-colors bg-transparent border-none font-base">
+        회원 탈퇴
+      </button>
+    </div>
+  </section>
+
+</div><!-- /본문 -->
+
+
+<!-- ══════════════════════════════════════════
+     FOOTER
+══════════════════════════════════════════ -->
+<footer class="np-footer">
+  <div class="np-footer-inner">
+    <!-- 왼쪽: 회사 정보 -->
+    <div class="flex flex-col justify-between gap-8 flex-1">
+      <div>
+        <p class="np-footer-tagline">중장년층을 위한 일자리 매칭 플랫폼</p>
+        <p class="np-footer-info">
+          주식회사 모리아타운 &nbsp;|&nbsp; 대표: 권오형 &nbsp;|&nbsp; 사업자등록번호: 215-86-89431<br/>
+          주소: 05854 서울특별시 송파구 법원로 114 (문정동) 비동 915호 &nbsp;|&nbsp; 전화:
+          <a href="tel:02-6713-7076" class="underline hover:text-neutral-900 transition-colors">02-6713-7076</a><br/>
+          직업정보제공사업 신고번호: 서울동부 제2026-11호
+        </p>
+        <p class="np-footer-info mt-3">© 2026 NextPartner. All rights reserved.</p>
+      </div>
+      <div class="flex items-center gap-3">
+        <svg width="40" height="40" viewBox="0 0 32 32" fill="none">
+          <path d="M16 2L28.7 9.5V24.5L16 32L3.3 24.5V9.5L16 2Z" fill="#ff7f65"/>
+          <path d="M11 10h2.5l5 12H16l-1.2-3H10l-1.2 3H6.5L11 10Zm2.8 7-1.8-4.5L10.2 17h3.6Z" fill="white"/>
+        </svg>
+        <div>
+          <p class="text-base font-bold text-neutral-900 leading-tight">NextPartner</p>
+          <p class="text-sm text-neutral-400 leading-tight">Senior Talent Marketplace</p>
+        </div>
+      </div>
+    </div>
+    <!-- 오른쪽: Support -->
+    <div class="shrink-0">
+      <p class="np-footer-section-title">Support</p>
+      <a class="np-footer-link">고객센터</a>
+      <a class="np-footer-link">회사소개</a>
+      <a class="np-footer-link">개인회원 이용약관</a>
+      <a class="np-footer-link">기업회원 이용약관</a>
+      <a class="np-footer-link">개인정보 처리방침</a>
+      <a class="np-footer-link">위치기반서비스</a>
+    </div>
+  </div>
+</footer>
+
+
+<!-- ══════════════════════════════════════════
+     MOBILE BOTTOM NAVIGATION
+══════════════════════════════════════════ -->
+<nav class="np-bottom-nav md:hidden fixed bottom-0 left-0 right-0 z-50">
+  <a href="#" class="np-bottom-nav-item">
+    <i data-lucide="home" style="width:24px;height:24px;"></i>
+    <span class="np-bottom-nav-label">홈</span>
+  </a>
+  <a href="#" class="np-bottom-nav-item">
+    <i data-lucide="briefcase" style="width:24px;height:24px;"></i>
+    <span class="np-bottom-nav-label">일자리</span>
+  </a>
+  <a href="#" class="np-bottom-nav-item">
+    <i data-lucide="file-pen-line" style="width:24px;height:24px;"></i>
+    <span class="np-bottom-nav-label">이력서 등록</span>
+  </a>
+  <a href="#" class="np-bottom-nav-item active">
+    <i data-lucide="circle-user" style="width:24px;height:24px;"></i>
+    <span class="np-bottom-nav-label">내 계정</span>
+  </a>
+</nav>
+
+
+<script>
+  lucide.createIcons({ nameAttr: 'data-lucide' });
+</script>
+
+</body>
+</html>
