@@ -46,45 +46,45 @@
 <!-- ══════════════════════════════════════════
      본문
 ══════════════════════════════════════════ -->
-<div class="max-w-content mx-auto px-4 md:px-6 lg:px-8 py-6 flex flex-col gap-4">
+<div class="max-w-content mx-auto px-4 md:px-6 lg:px-8 py-8 flex flex-col gap-5">
 
   <!-- ① 프로필 -->
   <section class="bg-neutral-0 border border-neutral-200 rounded-2xl px-5 md:px-8 py-6 flex items-center gap-5">
-    <div class="w-24 h-24 rounded-full bg-primary-100 overflow-hidden shrink-0">
+    <div class="w-20 h-20 rounded-full bg-primary-100 overflow-hidden shrink-0">
       <img src="https://i.pravatar.cc/80?img=12" alt="프로필" class="w-full h-full object-cover" />
     </div>
     <div>
-      <p class="text-3xl font-bold text-neutral-900 leading-tight">
+      <p class="text-2xl font-bold text-neutral-900 leading-tight">
         양인희<span class="text-primary-500">님</span>
       </p>
-      <p class="text-xl text-neutral-500 mt-2">57세 · 남성</p>
+      <p class="text-lg text-neutral-500 mt-1">57세 · 남성</p>
     </div>
   </section>
 
-  <!-- ② 이력서 카드 -->
+  <!-- ② 이력서·자기소개서 카드 -->
   <section class="bg-neutral-0 border border-primary-300 rounded-2xl overflow-hidden">
 
     <!-- 타이틀 + 버튼 -->
-    <div class="px-5 md:px-8 pt-6 pb-5 border-b border-neutral-100">
-      <div class="flex items-center gap-3 mb-4">
-        <div class="w-11 h-11 rounded-card bg-primary-50 flex items-center justify-center shrink-0">
-          <i data-lucide="file-text" style="width:22px;height:22px;stroke:#ff7f65;"></i>
+    <div class="px-5 md:px-8 py-6 border-b border-neutral-100">
+      <div class="flex items-center gap-4 mb-5">
+        <div class="w-12 h-12 rounded-card bg-primary-50 flex items-center justify-center shrink-0">
+          <i data-lucide="file-text" style="width:24px;height:24px;stroke:#ff7f65;"></i>
         </div>
         <div>
-          <p class="text-2xl font-bold text-neutral-900 leading-tight">이력서</p>
-          <p class="text-base text-neutral-400 mt-0.5">최종 수정 2025.04.12</p>
+          <p class="text-2xl font-bold text-neutral-900 leading-tight">이력서·자기소개서</p>
+          <p class="text-base text-neutral-400 mt-1">최종 수정 2025.04.12</p>
         </div>
       </div>
       <div class="flex gap-3">
-        <button class="np-btn np-btn-secondary np-btn-md flex-1">미리보기</button>
-        <button class="np-btn np-btn-primary np-btn-md flex-1">수정하기</button>
+        <button class="np-btn np-btn-secondary np-btn-lg w-full">미리보기</button>
+        <button class="np-btn np-btn-primary np-btn-lg w-full">수정하기</button>
       </div>
     </div>
 
     <!-- 이력서 등록 상태 -->
-    <div class="px-5 md:px-8 pt-5 pb-4">
+    <div class="px-5 md:px-8 py-6">
       <div class="flex items-center gap-4 bg-neutral-50 rounded-xl px-4 py-4">
-        <i data-lucide="check-circle-2" style="width:26px;height:26px;stroke:#22c55e;flex-shrink:0;"></i>
+        <i data-lucide="check-circle-2" style="width:24px;height:24px;stroke:#22c55e;flex-shrink:0;"></i>
         <div>
           <p class="text-xl font-bold text-neutral-800 leading-tight">이력서 등록 완료</p>
           <p class="text-lg text-neutral-500 mt-1">기본 정보 · 학력 · 경력 · 자격증 작성됨</p>
@@ -92,37 +92,37 @@
       </div>
     </div>
 
-    <!-- 구분선 -->
-    <div class="np-divider mx-5 md:mx-8"></div>
+    <!-- 구분선 (np-divider는 w-full 내장으로 mx 충돌 → 직접 선언) -->
+    <div class="h-px bg-neutral-200 mx-5 md:mx-8"></div>
 
     <!-- 자기소개서 완성도 -->
-    <div class="px-5 md:px-8 pt-5 pb-6">
-      <div class="flex items-center gap-3 mb-4">
+    <div class="px-5 md:px-8 py-6">
+      <div class="flex items-center gap-3 mb-5">
         <p class="text-xl font-bold text-neutral-800 shrink-0">자기소개서</p>
-        <div class="flex-1 h-2 bg-neutral-100 rounded-pill overflow-hidden">
+        <div class="flex-1 h-1.5 bg-neutral-100 rounded-pill overflow-hidden">
           <div class="h-full bg-primary-400 rounded-pill" style="width:75%"></div>
         </div>
-        <span class="text-lg font-semibold text-neutral-600 shrink-0">3/4 작성</span>
+        <span class="text-base font-semibold text-neutral-500 shrink-0">3/4 작성</span>
       </div>
       <div class="divide-y divide-neutral-100">
         <div class="flex items-center gap-3 py-4">
           <i data-lucide="check-circle-2" style="width:20px;height:20px;stroke:#22c55e;flex-shrink:0;"></i>
-          <span class="text-xl text-neutral-700 flex-1">성장배경</span>
+          <span class="text-lg text-neutral-700 flex-1">성장배경</span>
           <span class="np-badge np-badge-success">작성완료</span>
         </div>
         <div class="flex items-center gap-3 py-4">
           <i data-lucide="check-circle-2" style="width:20px;height:20px;stroke:#22c55e;flex-shrink:0;"></i>
-          <span class="text-xl text-neutral-700 flex-1">지원동기</span>
+          <span class="text-lg text-neutral-700 flex-1">지원동기</span>
           <span class="np-badge np-badge-success">작성완료</span>
         </div>
         <div class="flex items-center gap-3 py-4">
           <i data-lucide="check-circle-2" style="width:20px;height:20px;stroke:#22c55e;flex-shrink:0;"></i>
-          <span class="text-xl text-neutral-700 flex-1">성격의 장단점</span>
+          <span class="text-lg text-neutral-700 flex-1">성격의 장단점</span>
           <span class="np-badge np-badge-success">작성완료</span>
         </div>
         <div class="flex items-center gap-3 py-4">
           <i data-lucide="circle" style="width:20px;height:20px;stroke:#d1d5db;flex-shrink:0;"></i>
-          <span class="text-xl text-neutral-400 flex-1">입사 후 포부</span>
+          <span class="text-lg text-neutral-400 flex-1">입사 후 포부</span>
           <span class="np-badge np-badge-error">미작성</span>
         </div>
       </div>
@@ -133,14 +133,14 @@
   <!-- ③ 나의 활동 -->
   <section class="bg-neutral-0 border border-neutral-200 rounded-2xl overflow-hidden">
     <div class="grid grid-cols-2 divide-x divide-neutral-100">
-      <a href="#" class="flex flex-col items-center gap-2 py-7 hover:bg-neutral-50 transition-colors">
-        <i data-lucide="bookmark" style="width:28px;height:28px;stroke:#ff7f65;"></i>
-        <span class="text-4xl font-bold text-neutral-900">5</span>
+      <a href="#" class="flex flex-col items-center gap-2 py-8 hover:bg-neutral-50 transition-colors">
+        <i data-lucide="bookmark" style="width:26px;height:26px;stroke:#ff7f65;"></i>
+        <span class="text-3xl font-bold text-neutral-900">5</span>
         <span class="text-lg font-medium text-neutral-500">저장한 일자리</span>
       </a>
-      <a href="#" class="flex flex-col items-center gap-2 py-7 hover:bg-neutral-50 transition-colors">
-        <i data-lucide="send" style="width:28px;height:28px;stroke:#ff7f65;"></i>
-        <span class="text-4xl font-bold text-neutral-900">3</span>
+      <a href="#" class="flex flex-col items-center gap-2 py-8 hover:bg-neutral-50 transition-colors">
+        <i data-lucide="send" style="width:26px;height:26px;stroke:#ff7f65;"></i>
+        <span class="text-3xl font-bold text-neutral-900">3</span>
         <span class="text-lg font-medium text-neutral-500">지원한 일자리</span>
       </a>
     </div>
@@ -149,9 +149,9 @@
   <!-- ④ 고객센터 -->
   <section class="bg-neutral-0 border border-neutral-200 rounded-2xl overflow-hidden">
     <a href="#" class="flex items-center gap-4 px-5 md:px-8 py-5 hover:bg-neutral-50 transition-colors">
-      <i data-lucide="headphones" style="width:24px;height:24px;stroke:#aaaaaa;flex-shrink:0;"></i>
-      <span class="text-xl font-medium text-neutral-800 flex-1">고객센터</span>
-      <i data-lucide="chevron-right" style="width:20px;height:20px;stroke:#aaaaaa;"></i>
+      <i data-lucide="headphones" style="width:20px;height:20px;stroke:#aaaaaa;flex-shrink:0;"></i>
+      <span class="text-lg font-medium text-neutral-800 flex-1">고객센터</span>
+      <i data-lucide="chevron-right" style="width:16px;height:16px;stroke:#aaaaaa;"></i>
     </a>
   </section>
 
@@ -159,17 +159,17 @@
   <section class="bg-neutral-0 border border-neutral-200 rounded-2xl overflow-hidden">
 
     <div class="px-5 md:px-8 py-5 border-b border-neutral-100">
-      <button class="text-xl font-semibold text-neutral-600 hover:text-neutral-900 transition-colors bg-transparent border-none cursor-pointer">
+      <button class="text-lg font-semibold text-neutral-600 hover:text-neutral-900 transition-colors bg-transparent border-none cursor-pointer">
         로그아웃
       </button>
     </div>
 
     <div class="px-5 md:px-8 py-5">
       <div class="bg-error-100 rounded-xl px-4 py-4 mb-5">
-        <p class="text-lg font-bold text-error-500 mb-2">회원탈퇴 전 꼭 확인해주세요</p>
-        <p class="text-lg text-neutral-700 leading-relaxed">탈퇴하시면 이력서·자기소개서·지원 내역 등 모든 정보가 즉시 삭제되며 복구할 수 없습니다.</p>
+        <p class="text-base font-bold text-error-500 mb-2">회원탈퇴 전 꼭 확인해주세요</p>
+        <p class="text-base text-neutral-700 leading-relaxed">탈퇴하시면 이력서·자기소개서·지원 내역 등 모든 정보가 즉시 삭제되며 복구할 수 없습니다.</p>
       </div>
-      <button class="text-xl font-semibold text-error-500 hover:text-error-700 transition-colors bg-transparent border-none cursor-pointer">
+      <button class="text-lg font-semibold text-error-500 hover:text-error-700 transition-colors bg-transparent border-none cursor-pointer">
         회원탈퇴
       </button>
     </div>
