@@ -53,61 +53,73 @@
 
     <!-- 유저 프로필 -->
     <div class="px-5 md:px-8 pt-6 pb-5">
-      <p class="text-base text-neutral-500">안녕하세요</p>
-      <p class="text-2xl font-bold text-neutral-900 mt-1 leading-tight">
+      <p class="text-lg text-neutral-500">안녕하세요</p>
+      <p class="text-3xl font-bold text-neutral-900 mt-1 leading-tight">
         양인희<span class="text-primary-500">님</span>
       </p>
       <p class="text-base text-neutral-400 mt-2">010****3393</p>
+    </div>
+
+    <!-- 프로필 완성 안내 배너 -->
+    <div class="mx-5 md:mx-8 mb-5 px-4 py-3 bg-primary-50 rounded-card flex items-center gap-3">
+      <i data-lucide="info" style="width:20px;height:20px;stroke:#ff7f65;flex-shrink:0;"></i>
+      <p class="text-base text-primary-500 leading-relaxed">자기소개서 1개 항목이 미작성 상태예요. 완성하면 더 많은 일자리를 추천받을 수 있어요.</p>
     </div>
 
     <!-- 프로필 현황 -->
     <div class="border-t border-neutral-100 divide-y divide-neutral-100">
 
       <!-- 이력서 등록 -->
-      <div class="flex items-center px-5 md:px-8 py-4 gap-3">
-        <i data-lucide="file-text" style="width:20px;height:20px;stroke:#999999;"></i>
-        <span class="text-base text-neutral-700 flex-1">이력서 등록</span>
+      <div class="flex items-center px-5 md:px-8 py-5 gap-4">
+        <i data-lucide="file-text" style="width:22px;height:22px;stroke:#ff7f65;flex-shrink:0;"></i>
+        <span class="text-lg font-medium text-neutral-800 flex-1 leading-relaxed">이력서 등록</span>
         <span class="np-badge np-badge-success">완료</span>
       </div>
 
       <!-- 희망직무 -->
-      <div class="flex items-center px-5 md:px-8 py-4 gap-3">
-        <i data-lucide="crosshair" style="width:20px;height:20px;stroke:#999999;"></i>
-        <span class="text-base text-neutral-700 flex-1">희망직무</span>
-        <span class="text-base text-neutral-500">시스템 엔지니어</span>
+      <div class="flex items-center px-5 md:px-8 py-5 gap-4">
+        <i data-lucide="crosshair" style="width:22px;height:22px;stroke:#ff7f65;flex-shrink:0;"></i>
+        <span class="text-lg font-medium text-neutral-800 flex-1 leading-relaxed">희망직무</span>
+        <span class="text-lg font-bold text-neutral-700">시스템 엔지니어</span>
       </div>
 
-      <!-- 자기소개서 -->
-      <div class="flex items-center px-5 md:px-8 py-4 gap-3">
-        <i data-lucide="pen-line" style="width:20px;height:20px;stroke:#999999;"></i>
+      <!-- 자기소개서 — 미작성 항목 있음 -->
+      <div class="flex items-start px-5 md:px-8 py-5 gap-4">
+        <i data-lucide="pen-line" style="width:22px;height:22px;stroke:#f59e0b;flex-shrink:0;margin-top:2px;"></i>
         <div class="flex-1">
-          <p class="text-base text-neutral-700">자기소개서</p>
-          <p class="text-sm text-neutral-400 mt-0.5">4개중 3개 작성완료</p>
+          <p class="text-lg font-medium text-neutral-800 leading-relaxed">자기소개서</p>
+          <p class="text-base text-neutral-500 mt-1 leading-relaxed">4개 항목 중 3개 작성 완료<br><span class="text-warning-500 font-medium">아직 1개 항목이 작성되지 않았어요</span></p>
         </div>
-        <button class="np-btn np-btn-grey-stroke np-btn-sm">작성하기</button>
+        <button class="np-btn np-btn-primary np-btn-md shrink-0">작성하기</button>
       </div>
 
       <!-- 자격증 -->
-      <div class="flex items-center px-5 md:px-8 py-4 gap-3">
-        <i data-lucide="award" style="width:20px;height:20px;stroke:#999999;"></i>
-        <span class="text-base text-neutral-700 flex-1">자격증</span>
-        <span class="text-base text-neutral-500">2개</span>
+      <div class="flex items-center px-5 md:px-8 py-5 gap-4">
+        <i data-lucide="award" style="width:22px;height:22px;stroke:#ff7f65;flex-shrink:0;"></i>
+        <span class="text-lg font-medium text-neutral-800 flex-1 leading-relaxed">등록한 자격증</span>
+        <span class="text-xl font-bold text-neutral-800">2개</span>
       </div>
 
       <!-- 저장한 일자리 -->
-      <div class="flex items-center px-5 md:px-8 py-4 gap-3">
-        <i data-lucide="bookmark" style="width:20px;height:20px;stroke:#999999;"></i>
-        <span class="text-base text-neutral-700 flex-1">저장한 일자리</span>
-        <span class="text-base font-bold text-neutral-800 mr-2">5건</span>
-        <button class="np-btn np-btn-ghost np-btn-sm">바로가기</button>
+      <div class="flex items-center px-5 md:px-8 py-5 gap-4">
+        <i data-lucide="bookmark" style="width:22px;height:22px;stroke:#ff7f65;flex-shrink:0;"></i>
+        <div class="flex-1">
+          <p class="text-lg font-medium text-neutral-800 leading-relaxed">저장한 일자리</p>
+          <p class="text-base text-neutral-500 mt-0.5">관심 있는 공고를 저장해두세요</p>
+        </div>
+        <span class="text-2xl font-bold text-primary-500 mr-1">5건</span>
+        <button class="np-btn np-btn-secondary np-btn-md">바로가기</button>
       </div>
 
       <!-- 지원한 일자리 -->
-      <div class="flex items-center px-5 md:px-8 py-4 gap-3">
-        <i data-lucide="send" style="width:20px;height:20px;stroke:#999999;"></i>
-        <span class="text-base text-neutral-700 flex-1">지원한 일자리</span>
-        <span class="text-base font-bold text-neutral-800 mr-2">0건</span>
-        <button class="np-btn np-btn-ghost np-btn-sm">바로가기</button>
+      <div class="flex items-center px-5 md:px-8 py-5 gap-4">
+        <i data-lucide="send" style="width:22px;height:22px;stroke:#ff7f65;flex-shrink:0;"></i>
+        <div class="flex-1">
+          <p class="text-lg font-medium text-neutral-800 leading-relaxed">지원한 일자리</p>
+          <p class="text-base text-neutral-500 mt-0.5">지원한 공고의 진행 상황을 확인하세요</p>
+        </div>
+        <span class="text-2xl font-bold text-neutral-400 mr-1">0건</span>
+        <button class="np-btn np-btn-secondary np-btn-md">바로가기</button>
       </div>
 
     </div>
