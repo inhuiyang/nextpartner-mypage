@@ -60,47 +60,56 @@
       <p class="text-base text-neutral-400 mt-2">010****3393</p>
     </div>
 
-    <!-- 통계 카드 4종 -->
-    <div class="border-t border-neutral-100">
-      <div class="grid grid-cols-4">
+    <!-- 프로필 현황 -->
+    <div class="border-t border-neutral-100 divide-y divide-neutral-100">
 
-        <!-- 이력서 -->
-        <a href="#" class="flex flex-col items-center py-5 gap-2 hover:bg-neutral-50 transition-colors border-r border-neutral-100">
-          <div class="w-10 h-10 rounded-full bg-primary-50 flex items-center justify-center">
-            <i data-lucide="file-text" style="width:20px;height:20px;stroke:#ff7f65;"></i>
-          </div>
-          <span class="text-xl font-bold text-neutral-900">1</span>
-          <span class="text-sm text-neutral-500">이력서</span>
-        </a>
-
-        <!-- 지원 -->
-        <a href="#" class="flex flex-col items-center py-5 gap-2 hover:bg-neutral-50 transition-colors border-r border-neutral-100">
-          <div class="w-10 h-10 rounded-full bg-primary-50 flex items-center justify-center">
-            <i data-lucide="send" style="width:20px;height:20px;stroke:#ff7f65;"></i>
-          </div>
-          <span class="text-xl font-bold text-neutral-900">0</span>
-          <span class="text-sm text-neutral-500">지원</span>
-        </a>
-
-        <!-- 면접 -->
-        <a href="#" class="flex flex-col items-center py-5 gap-2 hover:bg-neutral-50 transition-colors border-r border-neutral-100">
-          <div class="w-10 h-10 rounded-full bg-primary-50 flex items-center justify-center">
-            <i data-lucide="calendar" style="width:20px;height:20px;stroke:#ff7f65;"></i>
-          </div>
-          <span class="text-xl font-bold text-neutral-900">0</span>
-          <span class="text-sm text-neutral-500">면접</span>
-        </a>
-
-        <!-- 관심 -->
-        <a href="#" class="flex flex-col items-center py-5 gap-2 hover:bg-neutral-50 transition-colors">
-          <div class="w-10 h-10 rounded-full bg-primary-50 flex items-center justify-center">
-            <i data-lucide="heart" style="width:20px;height:20px;stroke:#ff7f65;"></i>
-          </div>
-          <span class="text-xl font-bold text-neutral-900">0</span>
-          <span class="text-sm text-neutral-500">관심</span>
-        </a>
-
+      <!-- 이력서 등록 -->
+      <div class="flex items-center px-5 md:px-8 py-4 gap-3">
+        <i data-lucide="file-text" style="width:20px;height:20px;stroke:#999999;"></i>
+        <span class="text-base text-neutral-700 flex-1">이력서 등록</span>
+        <span class="np-badge np-badge-success">완료</span>
       </div>
+
+      <!-- 희망직무 -->
+      <div class="flex items-center px-5 md:px-8 py-4 gap-3">
+        <i data-lucide="crosshair" style="width:20px;height:20px;stroke:#999999;"></i>
+        <span class="text-base text-neutral-700 flex-1">희망직무</span>
+        <span class="text-base text-neutral-500">시스템 엔지니어</span>
+      </div>
+
+      <!-- 자기소개서 -->
+      <div class="flex items-center px-5 md:px-8 py-4 gap-3">
+        <i data-lucide="pen-line" style="width:20px;height:20px;stroke:#999999;"></i>
+        <div class="flex-1">
+          <p class="text-base text-neutral-700">자기소개서</p>
+          <p class="text-sm text-neutral-400 mt-0.5">4개중 3개 작성완료</p>
+        </div>
+        <button class="np-btn np-btn-grey-stroke np-btn-sm">작성하기</button>
+      </div>
+
+      <!-- 자격증 -->
+      <div class="flex items-center px-5 md:px-8 py-4 gap-3">
+        <i data-lucide="award" style="width:20px;height:20px;stroke:#999999;"></i>
+        <span class="text-base text-neutral-700 flex-1">자격증</span>
+        <span class="text-base text-neutral-500">2개</span>
+      </div>
+
+      <!-- 저장한 일자리 -->
+      <div class="flex items-center px-5 md:px-8 py-4 gap-3">
+        <i data-lucide="bookmark" style="width:20px;height:20px;stroke:#999999;"></i>
+        <span class="text-base text-neutral-700 flex-1">저장한 일자리</span>
+        <span class="text-base font-bold text-neutral-800 mr-2">5건</span>
+        <button class="np-btn np-btn-ghost np-btn-sm">바로가기</button>
+      </div>
+
+      <!-- 지원한 일자리 -->
+      <div class="flex items-center px-5 md:px-8 py-4 gap-3">
+        <i data-lucide="send" style="width:20px;height:20px;stroke:#999999;"></i>
+        <span class="text-base text-neutral-700 flex-1">지원한 일자리</span>
+        <span class="text-base font-bold text-neutral-800 mr-2">0건</span>
+        <button class="np-btn np-btn-ghost np-btn-sm">바로가기</button>
+      </div>
+
     </div>
 
   </section>
